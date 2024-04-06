@@ -1,0 +1,163 @@
+header {
+    font-size: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav2 {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav2 .ul2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav2 .ul2  li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#content {
+    text-align: center;
+    background-image: url(.jpg);
+    width:100%;
+    
+    padding: 20px;
+    text-shadow: rgba(0, 0, 0, 0.75) 0px 8px 8px;
+
+    color: #fff;
+
+}
+/*.BangaloreImage{
+    background-image: url(kar_img.jpg);
+    
+    background-position: center;
+    background-size: cover;
+    height: 375px !important;
+    min-height: 375px !important;
+}*/
+.title{
+    margin: 40px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.75) 0px 8px 8px;
+    color: #fff;
+    font-size: 30px;
+}
+.title2{
+    padding: 40px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.495) 0px 8px 8px;
+    color: rgb(239, 241, 246);
+    font-size: 30px;
+}
+.title3{
+    padding: 40px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.495) 0px 8px 8px;
+    color: rgb(250, 251, 250);
+    font-size: 30px;
+}
+
+.bottomnav{
+    justify-content: space-evenly;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height:60px;
+    position: fixed;
+    bottom:0px;
+    background: rgb(109, 108, 108);
+}
+.bottomplace
+{   justify-content: space-evenly;
+    padding-left:10px;
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+    display: flex;
+    color:blanchedalmond;
+}
+.bottomplace p
+{   /*text-decoration: none;
+    justify-content: space-evenly;
+    /*padding-left: 10px;
+    text-align: center;
+    align-content: center;*/
+    margin-right: 40px;
+    margin-top: 10px;
+    display: flex;
+    color:blanchedalmond;
+}
+.bottomplace p a{
+    color:blanchedalmond;
+text-decoration: none;  
+}
+.bottomplace i{
+    
+    color:#f4f4f4;
+    font-size: 1rem;
+}
+
+
+/*NEW*/
+/*CONTENT 1
+
+  /*PLACE 1*/
+  /* Style for the container div */
+  .content {
+    margin-left: 70px;
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Distribute items evenly with space around */
+    align-items: center; /* Align items vertically */
+}
+
+/* Style for the container divs */
+.eme1, .eme2, .eme3 {
+
+    margin:10px;
+    width: 310px; /* Set the width of the container */
+    height: 250px; /* Set the height of the container */
+    border: 1px solid #ccc; /* Add a border to the container */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Style for the images */
+.eme1 img, .eme2 img, .eme3 img {
+    width: 100%; /* Make the image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 5px; /* Add rounded corners for the image */
+    border-top-right-radius: 5px; /* Add rounded corners for the image */
+}
+
+/* Style for the text */
+.eme1 h2, .eme2 h2, .eme3 h2 {
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding to the text */
+    text-align: center; /* Center-align the text */
+    background-color: #f0f0f0; /* Add background color for the text */
+    border-bottom-left-radius: 5px; /* Add rounded corners for the text */
+    border-bottom-right-radius: 5px; /* Add rounded corners for the text */
+}
+
+/* Style for the links */
+.eme1 h2 a, .eme2 h2 a, .eme3 h2 a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #333; /* Set text color */
+}
+
+/* Hover effect for the containers */
+.eme1:hover, .eme2:hover, .eme3:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}

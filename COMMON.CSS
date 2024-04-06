@@ -1,0 +1,261 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Body styles */
+body {
+    background: url(backimg.jpg);
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #201f1f;
+}
+nav{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 70px;
+    background: #3E8DA8;
+    box-shadow: 0 1px 2px rgba(21, 20, 20, 0.2);
+    z-index: 0;
+  }
+  nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    margin: auto;
+    /* background: red; */
+    padding: 0 50px;
+  }
+  .navbar .logo a{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding-right:20px;
+  }
+  nav .navbar .nav-links{
+    line-height: 70px;
+    height: 100%;
+  }
+  nav .navbar .links{
+    display: flex;
+  }
+  nav .navbar .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 24px;
+  }
+  nav .navbar .links li a{
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow
+  {
+    transform: rotate(0deg);
+  }
+  
+  nav .navbar .links li .arrow{
+    
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  nav .navbar .links li .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background: #3E8DA8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+    
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu
+  {
+   
+    display: block;
+  }
+  .navbar .links li .sub-menu li{
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+   
+  }
+  .navbar .links li .sub-menu a{
+    
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .navbar .links li .sub-menu .more-arrow{
+    line-height: 40px;
+  }
+  
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: block;
+  }
+  
+
+/* Header styles */
+header {
+    
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+hr{
+    background:black ;
+    height: 3px;
+}
+/* Main styles */
+main {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.495) 0px 8px 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+section {
+   
+    margin-bottom: 30px;
+}
+
+section h1 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    color: #666;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+
+/* Map styles */
+#map {
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+        
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    
+    font-size: 0.8em;
+}
+
+/* NEW*/
+.reach {
+    
+    margin: 30px;
+}
+.reach h1{
+    padding:30px ;
+}
+.gen-list.gen-list-big-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gen-list.gen-list-big-icons .col-4 {
+    
+    flex: 1 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.utility-panel.gen-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+    min-height: 160px;
+}
+
+.utility-top {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.list-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.utility-content {
+    padding: 20px;
+}
+
+.list-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.utility-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}

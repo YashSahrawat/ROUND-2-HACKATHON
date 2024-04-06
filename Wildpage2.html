@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forest and Wildlife of Bangalore</title>
+<link rel="stylesheet" href="Wildpage2.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+          
+          <div class="logo"><a href="#">Bangalore Tour Guide</a></div>
+          <div class="nav-links">
+            
+            <ul class="links">
+              
+              <li>
+                <a href="#">GUIDED TOUR</a>
+                <!--<i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>-->
+                <ul class="htmlCss-sub-menu sub-menu">
+                    <li ><a href="bangalore.html">Historical Places</a>
+                   
+                    </li>
+                  <li ><a href="wildlife.html">Wildlife</a>
+                    
+                    </li>
+                  
+                </ul>
+              </li>
+              
+              
+              <li><a href="javaS.html" >INTERACTIVE MAP</a>
+            </li>
+              <li ><a href="trial2 guide.html">HOME</a></li>
+              <li><a href="login.html">LOGIN</a></li>
+            </ul>
+          </div>
+           
+        </div>
+      </nav>
+  
+<header>
+  <h1> DUBARE ELEPHANT CAMP </h1>
+</header>
+<div class="content">
+  <div class="image-left">
+    <img src="ele.jpg" alt="image1">
+    
+  </div>
+  <h1>Introduction</h1>
+    <p>Dubare elephant camp, Coorg is one of the major elephant 
+        camps among the others in Karnataka, which deals with about 
+        150 elephants. Dubare elephant camp, on the banks of River Kaveri,
+        is in the Kodagu/Coorg district of Karnataka. Once a place to train
+        the elephants for Dussehra in Mysore, now has a new and enhanced calling for the world to explore. 
+    </P>
+        <h1>all info in the audio </h1>
+        <audio controls>
+          <source src="audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio tag.
+        </audio>
+        <h1>visual information in the form of video</h1>
+        <video controls>
+          <source src="info.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <span id="moreText" class="hidden">
+        <h1>About the camp</h1>
+        <p>In Dubare elephant camp, you could get close to these gigantic creatures and interact with them, 
+            apart from indulging in other adventure activities. Dubare elephant camp is the property of the
+             Karnataka government-owned Jungle Lodges and resorts. It is one of the important places to 
+             visit while holidaying in Coorg.</p>
+        <h1>Activities in Dubare Elephant Camp</h1>
+        <p>In Dubare elephant camp, tourists not only get to watch the elephants but get to 
+            interact with them as well. A trained naturalist explains the elephant’s history,
+             biology and ecology. Tourists can also engage in bathing the elephants and feeding
+              them in order to get an intimate experience with these animals in the presence of 
+              well-trained mahouts. Visitors can caress and closely interact with the elephants 
+              with the assigned mahouts or simply watch their activities from afar. Tourists can
+               bathe the elephants, which gather around 9 AM by the river banks of Kaveri for their
+                usual ritual of bathing for about 45 minutes. </p>
+        
+        <h1>Elephant Safari</h1>
+        <p>An elephant safari into the jungle is always an interesting activity for tourists 
+            and wildlife enthusiasts. Dubare elephant camp organises elephant safaris for its 
+            visitors on well-trained elephants, escorted by specialists. Elephant safari timings 
+            in the Dubare elephant camp are from 10 AM to 12 PM and from 4 PM to 5 PM, respectively.
+             The elephant ride lasts for about 45 to 60 minutes in and around the jungle.
+
+</p>
+<p>Jeep Safari
+
+    Jeep safari into the Dubare forest can be a thrilling experience for the guests who accommodate themselves in the Jungle Lodges and Resorts. Guests can spot animals like Sambar, spotted deer, gaur, wild elephants, sloth bears, tigers, bison, crocodiles, etc which infest the forest. The jeep safari is an exciting one for bird lovers as well, for the Dubare forest is home to a variety of bird species like Parakeets, Barbets, Hornbills, Peacocks, Kingfishers, Partridges and others.  
+    
+    Camping
+    
+    Dubare elephant camp has something for all. It doesn’t disappoint the nature lovers as well. Apart from engaging with elephants and taking part in wildlife activities, camping is also an option to spend a worthwhile weekend. The picnic spots and camping areas are safely fenced with electric fences to dissuade the intrusion of wild animals.
+    
+    River Rafting and Coracle Riding
+    
+    Tourists can also engage themselves in river rafting and coracle riding in the Kaveri river,</p>
+  <div class="image-right">
+    <img src="ele2.jpg" alt="Image 2">
+    
+  </div>
+  <p>Illegal mining around Bannerghatta national park
+    The park is threatened by multiple granite quarries operating around the national park.[12] 
+    These quarries are located alarmingly close to critical elephant corridors inside the national 
+    park such as Kardikal - Madeswara corridor.[13] While there is ban on mining and granite quarrying
+     around the national park within a radius of One km from the boundary demarcated as "Safe Zone",
+      quarries operate unabatedly. Vehicular movement is also uncontrolled. Tremors from the explosives
+       used in the quarry operations are felt across a radius of at least five km adversely affecting
+        elephants and other wild animals.</p>
+    <section id="location">
+        <h2>Location</h2>
+        <div id="map">
+            
+        </div>
+    </section>
+  
+   
+</span>
+<button onclick="toggleText()" id="readMoreBtn">More info</button>
+</div>
+</div>
+
+    <script>
+
+    function toggleText() {
+  var moreText = document.getElementById("moreText");
+  var btnText = document.getElementById("readMoreBtn");
+
+  if (moreText.classList.contains("hidden")) {
+    moreText.classList.remove("hidden");
+    btnText.innerHTML = "Read Less";
+  } else {
+    moreText.classList.add("hidden");
+    btnText.innerHTML = "Read More";
+  }
+}
+</script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+        <script>
+        // Initialize the map
+        var map = L.map('map').setView([13.0098, 77.5511], 13); // Centered at London with zoom level 13
+
+        // Add a tile layer to the map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        
+
+        // Add a marker for a specific location
+        var marker = L.marker([13.0098, 77.5511]).addTo(map);
+        marker.bindPopup("ISKCON Temple.").openPopup();
+
+       
+
+        // Add search control
+        var searchControl = new L.Control.Search({
+                position: 'topright',
+                layer: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+                }),
+                propertyName: 'name',
+                marker: false,
+                moveToLocation: function(latlng, title, map) {
+                    // Set the map view to the specified location
+                    map.setView(latlng, 16);
+                }
+            });
+            map.addControl(searchControl);
+        
+    
+</script>
+</body>
+</html>

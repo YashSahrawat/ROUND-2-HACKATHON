@@ -1,0 +1,32 @@
+.notification-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f8f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide it by default */
+  }
+  
+  .notification-popup p {
+    margin: 0;
+  }
+  
+  .notification-popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: #888;
+  }
+  a{
+    color: rgb(8, 8, 8);
+   
+  }
+  a:hover{
+    color: rgb(81, 103, 248);
+   
+  }
+  

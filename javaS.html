@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Example</title>
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search/dist/leaflet-search.min.css">
+    
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-search/dist/leaflet-search.min.js"></script>
+    <style>
+        /* Define CSS styles for the map container */
+        #map { 
+            border:2px solid black;
+            margin: 20px;
+            align-items: center;
+            height: 400px;
+            width: 80%;
+            left: 30px;
+        }
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    
+}
+.h1{
+    text-align: center;
+    margin-left: 200px;
+}
+.h3{
+    margin-left: 50px;
+}
+header a{
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    
+    <div id="map">
+        
+    </div>
+
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([ 22.27, 73.18], 10); // Centered at London with zoom level 13
+
+        // Add a tile layer to the map
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add a marker for a specific location
+       
+        var marker = L.marker([22.3073, 73.1811]).addTo(map);
+        marker.bindPopup("Eva Women's Hospital").openPopup();
+
+        // Add a marker for a specific location
+
+        var marker = L.marker([22.3075, 73.1811]).addTo(map);
+        marker.bindPopup("Asirwad Hospital").openPopup();
+
+        // Add a marker for a specific location
+        var marker = L.marker([ 22.273, 73.185]).addTo(map);
+        marker.bindPopup("sunshine global hospital").openPopup();
+
+        // Add search control
+        var searchControl = new L.Control.Search({
+                position: 'topright',
+                layer: L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+                }),
+                propertyName: 'name',
+                marker: false,
+                moveToLocation: function(latlng, title, map) {
+                    // Set the map view to the specified location
+                    map.setView(22.2726, 73.1878, 16);
+                }
+            });
+            map.addControl(searchControl);
+        
+    
+
+    </script>
+</body>
+</html>
